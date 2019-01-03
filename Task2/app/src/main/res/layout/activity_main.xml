@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:weightSum="1"
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:onClick="clicklinear1"
+           android:orientation="vertical"
+           android:layout_weight="0.5"
+           android:layout_width="0sp"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/image12"
+               android:layout_width="150dp"
+               android:layout_height="100dp"
+               android:src="@drawable/pic1"/>
+
+           <TextView
+               android:id="@+id/tv11"
+               android:layout_marginTop="15dp"
+               android:layout_gravity="center"
+               android:textSize="20dp"
+               android:text="listview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:onClick="clicklinear2"
+           android:orientation="vertical"
+           android:layout_marginLeft="50dp"
+           android:layout_weight="0.5"
+           android:layout_width="0sp"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/image13"
+               android:layout_width="150dp"
+               android:layout_height="100dp"
+               android:src="@drawable/pic1"/>
+
+           <TextView
+               android:id="@+id/tv12"
+               android:layout_marginTop="15dp"
+               android:layout_gravity="center"
+               android:textSize="20dp"
+               android:text="gridview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+   </LinearLayout>
+
+   <!-- <EditText
+        android:id="@+id/lgnmail"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="E-mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mlpsswd"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:onClick="clickspinner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/mn_image14"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pic1"/>
+
+
+    <TextView
+        android:id="@+id/tv33"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="clickbtn"
+        android:textSize="30dp"
+        android:background="#0091ea"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="clickme"
+        android:layout_width="200dp"
+        android:layout_height="60dp" />
+
+
+
+</LinearLayout>

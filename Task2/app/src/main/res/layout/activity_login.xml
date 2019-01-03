@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/lgnmail"
+        android:textSize="22dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/lgnpassword"
+        android:textSize="22dp"
+        android:hint="Password"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="clicklgnbtn"
+        android:id="@+id/lgnbtn"
+        android:textSize="25dp"
+        android:text="login"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="60dp" />
+
+
+</LinearLayout>
